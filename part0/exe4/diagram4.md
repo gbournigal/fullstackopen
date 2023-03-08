@@ -4,7 +4,7 @@ participant browser
 participant server
 
 browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
-Note right of browser: The data is sent on de POST
+Note right of browser: The data is sent on the POST
 activate server
 server-->>browser: status 302, URL redirect to notes
 deactivate server
